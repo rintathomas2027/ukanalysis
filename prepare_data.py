@@ -1,15 +1,15 @@
-"""
-UK Top 50 Playlist Data Ingestion, Cleaning & Feature Engineering Pipeline.
-Unified Mentor / Atlantic Recording Corporation Project.
-"""
-
 import os
 import sys
 import json
 import re
-import urllib.request
 import pandas as pd
 import numpy as np
+
+try:
+    import gdown
+    GDOWN_AVAILABLE = True
+except ImportError:
+    GDOWN_AVAILABLE = False
 
 # Known prominent UK / British artists for domestic market representation labeling
 UK_DOMESTIC_ARTISTS = {
@@ -27,8 +27,9 @@ UK_DOMESTIC_ARTISTS = {
     "headie one", "tate mcrae", "the 1975", "robert miles", "dasha", "nines"
 }
 
+GDRIVE_FILE_ID = "1_kNohtiTO1GtqHgw6skDgsAtfn_A8uyW"
 FALLBACK_SOURCE_PATH = r"C:\Users\rinta\.gemini\antigravity\brain\9c23b1f5-285f-4099-8674-d8dfcb08a877\.system_generated\steps\24\content.md"
-GDRIVE_URL = "https://drive.google.com/uc?export=download&id=1_kNohtiTO1GtqHgw6skDgsAtfn_A8uyW"
+
 
 def get_raw_data_stream():
     """Locate or retrieve raw CSV content."""
@@ -37,33 +38,48 @@ def get_raw_data_stream():
     os.makedirs(data_dir, exist_ok=True)
     raw_csv_path = os.path.join(data_dir, "uk_top50_raw.csv")
 
+    # 1. Use existing valid CSV if present
     if os.path.exists(raw_csv_path) and os.path.getsize(raw_csv_path) > 100000:
         print(f"[DataLoader] Using existing raw CSV: {raw_csv_path}")
         return raw_csv_path
 
+    # 2. Extract from local cache (dev machine only)
     if os.path.exists(FALLBACK_SOURCE_PATH):
         print(f"[DataLoader] Extracting CSV from local cache: {FALLBACK_SOURCE_PATH}")
         with open(FALLBACK_SOURCE_PATH, "r", encoding="utf-8", errors="ignore") as f:
             lines = f.readlines()
-        
-        # Locate the header line starting with date,position,song
         start_idx = 0
         for idx, line in enumerate(lines):
             if line.strip().startswith("date,position,song"):
                 start_idx = idx
                 break
-        
         csv_content = "".join(lines[start_idx:])
         with open(raw_csv_path, "w", encoding="utf-8") as out_f:
             out_f.write(csv_content)
-        print(f"[DataLoader] Saved extracted raw CSV to {raw_csv_path} ({len(lines)-start_idx} lines)")
+        print(f"[DataLoader] Saved extracted raw CSV ({len(lines) - start_idx} lines)")
         return raw_csv_path
 
-    # Fallback to downloading from Google Drive directly
-    print(f"[DataLoader] Downloading raw dataset from Google Drive...")
-    urllib.request.urlretrieve(GDRIVE_URL, raw_csv_path)
-    print(f"[DataLoader] Download complete: {raw_csv_path}")
-    return raw_csv_path
+    # 3. Download from Google Drive using gdown (works on Streamlit Cloud)
+    print("[DataLoader] Downloading dataset from Google Drive via gdown...")
+    if not GDOWN_AVAILABLE:
+        raise RuntimeError(
+            "gdown is not installed. Run: pip install gdown\n"
+            "Or add 'gdown' to requirements.txt and redeploy."
+        )
+    gdown.download(id=GDRIVE_FILE_ID, output=raw_csv_path, quiet=False, fuzzy=True)
+    
+    # Verify the downloaded file is a proper CSV (not HTML error page)
+    if os.path.exists(raw_csv_path):
+        with open(raw_csv_path, "r", encoding="utf-8", errors="ignore") as f:
+            first_line = f.readline().strip()
+        if first_line.startswith("date,position,song"):
+            print(f"[DataLoader] Download complete: {raw_csv_path}")
+            return raw_csv_path
+        elif "<html" in first_line.lower():
+            os.remove(raw_csv_path)
+            raise RuntimeError("Google Drive returned an HTML error page. Check file sharing permissions (must be 'Anyone with link').")
+
+    raise RuntimeError("Failed to download dataset from Google Drive.")
 
 
 def parse_collaborators(artist_str, song_title=""):

@@ -1,35 +1,58 @@
 @echo off
-title Push UK Top 50 Project to GitHub - rintathomas2027/ukanalysis
+title BritSound Intelligence - Push to GitHub (rintathomas2027/ukanalysis)
 echo ======================================================================
-echo Synchronizing UK Top 50 Analytics Project to GitHub...
-echo Repository: https://github.com/rintathomas2027/ukanalysis.git
+echo  BritSound Intelligence - UK Top 50 Analytics
+echo  Pushing to: https://github.com/rintathomas2027/ukanalysis.git
 echo ======================================================================
 echo.
 
 cd /d "%~dp0"
 
-echo 1. Checking Git repository status...
+echo [Step 1] Creating Streamlit Cloud config...
+if not exist ".streamlit" mkdir .streamlit
+(
+echo [theme]
+echo primaryColor = "#1DB954"
+echo backgroundColor = "#121212"
+echo secondaryBackgroundColor = "#1E1E1E"
+echo textColor = "#FFFFFF"
+echo font = "sans serif"
+echo.
+echo [server]
+echo maxUploadSize = 200
+echo headless = true
+echo.
+echo [browser]
+echo gatherUsageStats = false
+) > .streamlit\config.toml
+echo Done.
+
+echo [Step 2] Initializing Git repository...
 if not exist ".git" (
-    echo Initializing new Git repository...
     git init
     git branch -M main
 )
 
-echo 2. Configuring remote origin...
+echo [Step 3] Configuring remote origin...
 git remote remove origin >nul 2>&1
 git remote add origin https://github.com/rintathomas2027/ukanalysis.git
 
-echo 3. Staging all project deliverables...
+echo [Step 4] Staging all project files...
 git add .
 
-echo 4. Committing changes...
-git commit -m "feat: complete UK Top 50 playlist market structure, artist diversity & content localization analysis suite"
+echo [Step 5] Committing...
+git commit -m "feat: BritSound Intelligence - UK Top 50 Market Analytics Dashboard (complete)"
 
-echo 5. Pushing to GitHub (main branch)...
+echo [Step 6] Pushing to GitHub...
+git branch -M main
 git push -u origin main
 
 echo.
 echo ======================================================================
-echo Git push completed! Check: https://github.com/rintathomas2027/ukanalysis
+echo  SUCCESS! Your project is live on GitHub:
+echo  https://github.com/rintathomas2027/ukanalysis
+echo.
+echo  Next: Deploy to Streamlit Cloud at https://share.streamlit.io
+echo  Select repo: rintathomas2027/ukanalysis  |  Main file: app.py
 echo ======================================================================
 pause
