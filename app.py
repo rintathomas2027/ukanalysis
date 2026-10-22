@@ -450,7 +450,7 @@ with tab3:
         top_bridges = pd.DataFrame(net_metrics["top_central_artists"])
         if len(top_bridges) > 0:
             st.dataframe(
-                top_bridges[["Artist", "Partners", "UK Domestic"]].head(6),
+                top_bridges[["Artist", "Weighted Degree", "Betweenness Centrality", "UK Domestic"]].head(6),
                 use_container_width=True,
                 hide_index=True
             )
