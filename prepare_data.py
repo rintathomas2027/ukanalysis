@@ -66,7 +66,7 @@ def get_raw_data_stream():
             "gdown is not installed. Run: pip install gdown\n"
             "Or add 'gdown' to requirements.txt and redeploy."
         )
-    gdown.download(id=GDRIVE_FILE_ID, output=raw_csv_path, quiet=False, fuzzy=True)
+    gdown.download(id=GDRIVE_FILE_ID, output=raw_csv_path, quiet=False)
     
     # Verify the downloaded file is a proper CSV (not HTML error page)
     if os.path.exists(raw_csv_path):
