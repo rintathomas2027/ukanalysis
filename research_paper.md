@@ -120,6 +120,8 @@ where $S$ is total unique artists and $p_i$ is relative frequency.
 +-------------------------------------------------------------+
 ```
 
+![Top 10 Artists by Chart Days — UK Top 50 (May 2024 – Nov 2025)](assets/top_artists_dominance.svg)
+
 Analysis of daily HHI values reveals that the baseline UK streaming market remains structurally competitive ($HHI < 1,000$). However, temporal shocks occur when major artists release multi-track projects. For instance, during the release window of Lewis Capaldi's extended edition, Taylor Swift's *Midnights (Til Dawn)*, and Dave & Central Cee's joint EP, daily HHI spiked above **1,650**, crossing into moderate concentration before reverting to mean within 10 to 18 days.
 
 The Lorenz curve demonstrates that while the top 10% of artists account for approximately 45% of total chart days, the remaining 55% of chart real estate is occupied by a rotating cohort of emerging acts and persistent indie/catalogue recordings.
@@ -175,6 +177,8 @@ In the United States, explicit tracks routinely capture over 55–65% of the Bil
 +----------------------------------------------------+
 ```
 
+![Explicit vs. Clean Track Distribution by Chart Rank Tier](assets/explicitness_by_rank.svg)
+
 #### Why Clean Tracks Dominate the UK Top 10:
 1. **BBC Radio 1 & Daytime Airplay Multiplier**: In the UK, daytime national radio airplay remains strongly correlated with streaming consumption spikes. Stations enforce stringent regulatory standards, creating heavy algorithmic pull toward clean radio edits.
 2. **Workplace and Public Environment Streaming**: British office, retail, and hospitality streaming heavily leans on family-friendly algorithmic playlists (e.g., *Hot Hits UK*, *Pop UK*), which filter out explicit content for daytime listening.
@@ -228,6 +232,8 @@ Based on empirical data from the UK streaming ecosystem, we recommend a four-pil
     Singles Waterfall (6-8wks)    Mandatory Clean Cuts Day 1
     Duration: 2m45s - 3m15s       Daytime Radio Optimization
 ```
+
+![Atlantic Records UK Strategic Architecture — Four Pillars](assets/market_architecture_flow.svg)
 
 ### Pillar 1: A&R Signing & Roster Development
 - **Prioritize UK Dance/Electronic & Drum & Bass Talent**: Mainstream UK audiences demonstrate sustained appetite for high-energy dance and electronic pop (cassö, Jazzy, Switch Disco, LF SYSTEM, Hannah Laing). Atlantic should aggressively scout British producer-DJs with proven club-to-streaming crossover potential.

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="850" height="320">
+  <rect width="100%" height="100%" fill="#121212" rx="10"/>
+  <text x="30" y="38" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">BritSound Strategic Decision Architecture</text>
+  <text x="30" y="58" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" fill="#A0A0A0">Atlantic Recording Corporation UK Release Strategy Framework</text>
+
+  <!-- Step 1 Box -->
+  <rect x="30" y="85" width="175" height="190" fill="#1A1F2C" stroke="#2D3748" rx="8"/>
+  <text x="117" y="115" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1DB954">1. Roster &amp; A&amp;R</text>
+  <line x1="45" y1="128" x2="190" y2="128" stroke="#333333"/>
+  <text x="45" y="150" font-family="sans-serif" font-size="10" fill="#CBD5E0">• UK Dance &amp; Electronic</text>
+  <text x="45" y="170" font-family="sans-serif" font-size="10" fill="#CBD5E0">• Urban Duo Formats</text>
+  <text x="45" y="190" font-family="sans-serif" font-size="10" fill="#CBD5E0">• Heritage Indie Catalogue</text>
+  <text x="45" y="215" font-family="sans-serif" font-size="10" font-weight="600" fill="#1DB954">Target: 48%+ Domestic</text>
+  <text x="45" y="235" font-family="sans-serif" font-size="9" fill="#718096">Relevance Index</text>
+
+  <!-- Arrow 1 -->
+  <polygon points="215,180 230,175 215,170" fill="#1DB954"/>
+
+  <!-- Step 2 Box -->
+  <rect x="240" y="85" width="175" height="190" fill="#1A1F2C" stroke="#2D3748" rx="8"/>
+  <text x="327" y="115" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0072CE">2. Collaboration</text>
+  <line x1="255" y1="128" x2="400" y2="128" stroke="#333333"/>
+  <text x="255" y="150" font-family="sans-serif" font-size="10" fill="#CBD5E0">• UK Bridge Pairing</text>
+  <text x="255" y="170" font-family="sans-serif" font-size="10" fill="#CBD5E0">• Cross-Genre Crossover</text>
+  <text x="255" y="190" font-family="sans-serif" font-size="10" fill="#CBD5E0">• EDM + Urban Vocalist</text>
+  <text x="255" y="215" font-family="sans-serif" font-size="10" font-weight="600" fill="#0072CE">Top 10 Win-rate: 44.8%</text>
+  <text x="255" y="235" font-family="sans-serif" font-size="9" fill="#718096">Partnership Boost</text>
+
+  <!-- Arrow 2 -->
+  <polygon points="425,180 440,175 425,170" fill="#0072CE"/>
+
+  <!-- Step 3 Box -->
+  <rect x="450" y="85" width="175" height="190" fill="#1A1F2C" stroke="#2D3748" rx="8"/>
+  <text x="537" y="115" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#F59E0B">3. Format Tuning</text>
+  <line x1="465" y1="128" x2="610" y2="128" stroke="#333333"/>
+  <text x="465" y="150" font-family="sans-serif" font-size="10" fill="#CBD5E0">• Singles Waterfall</text>
+  <text x="465" y="170" font-family="sans-serif" font-size="10" fill="#CBD5E0">• 6-8 Wk Cadence</text>
+  <text x="465" y="190" font-family="sans-serif" font-size="10" fill="#CBD5E0">• 2:45 - 3:15 Length</text>
+  <text x="465" y="215" font-family="sans-serif" font-size="10" font-weight="600" fill="#F59E0B">Survival: 84 Days</text>
+  <text x="465" y="235" font-family="sans-serif" font-size="9" fill="#718096">Vs. 21d Album Decay</text>
+
+  <!-- Arrow 3 -->
+  <polygon points="635,180 650,175 635,170" fill="#F59E0B"/>
+
+  <!-- Step 4 Box -->
+  <rect x="660" y="85" width="160" height="190" fill="#1A1F2C" stroke="#2D3748" rx="8"/>
+  <text x="740" y="115" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#FF007F">4. Localization</text>
+  <line x1="675" y1="128" x2="805" y2="128" stroke="#333333"/>
+  <text x="675" y="150" font-family="sans-serif" font-size="10" fill="#CBD5E0">• Day-1 Clean Edits</text>
+  <text x="675" y="170" font-family="sans-serif" font-size="10" fill="#CBD5E0">• BBC Radio 1 Focus</text>
+  <text x="675" y="190" font-family="sans-serif" font-size="10" fill="#CBD5E0">• Workplace Playlists</text>
+  <text x="675" y="215" font-family="sans-serif" font-size="10" font-weight="600" fill="#FF007F">Top 10 Clean: 68.8%</text>
+  <text x="675" y="235" font-family="sans-serif" font-size="9" fill="#718096">Removes Airplay Ceiling</text>
+</svg>

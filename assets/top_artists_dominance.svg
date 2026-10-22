@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="850" height="480">
+  <rect width="100%" height="100%" fill="#121212" rx="10"/>
+  <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Top 10 Dominant Artists in the UK Top 50 (2024–2025)</text>
+  <text x="30" y="66" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" fill="#A0A0A0">Measured by Cumulative Days on Chart (Spotify UK Top 50 Snapshots)</text>
+
+  <!-- Legend -->
+  <rect x="580" y="32" width="12" height="12" fill="#1DB954" rx="3"/>
+  <text x="600" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" fill="#FFFFFF">UK Domestic Artist</text>
+  <rect x="715" y="32" width="12" height="12" fill="#F59E0B" rx="3"/>
+  <text x="735" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" fill="#FFFFFF">International</text>
+
+  <!-- Y-Axis Gridlines & Bars -->
+  <!-- 1. Taylor Swift -->
+  <text x="160" y="105" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Taylor Swift</text>
+  <rect x="175" y="90" width="560" height="22" fill="#F59E0B" rx="4"/>
+  <text x="742" y="106" font-family="sans-serif" font-size="11" font-weight="700" fill="#F59E0B">1,420 days</text>
+
+  <!-- 2. Arctic Monkeys -->
+  <text x="160" y="140" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Arctic Monkeys</text>
+  <rect x="175" y="125" width="467" height="22" fill="#1DB954" rx="4"/>
+  <text x="649" y="141" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">1,184 days</text>
+
+  <!-- 3. Dave -->
+  <text x="160" y="175" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Dave</text>
+  <rect x="175" y="160" width="379" height="22" fill="#1DB954" rx="4"/>
+  <text x="561" y="176" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">962 days</text>
+
+  <!-- 4. Central Cee -->
+  <text x="160" y="210" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Central Cee</text>
+  <rect x="175" y="195" width="362" height="22" fill="#1DB954" rx="4"/>
+  <text x="544" y="211" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">918 days</text>
+
+  <!-- 5. Coldplay -->
+  <text x="160" y="245" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Coldplay</text>
+  <rect x="175" y="230" width="333" height="22" fill="#1DB954" rx="4"/>
+  <text x="515" y="246" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">845 days</text>
+
+  <!-- 6. Harry Styles -->
+  <text x="160" y="280" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Harry Styles</text>
+  <rect x="175" y="265" width="320" height="22" fill="#1DB954" rx="4"/>
+  <text x="502" y="281" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">812 days</text>
+
+  <!-- 7. Lewis Capaldi -->
+  <text x="160" y="315" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Lewis Capaldi</text>
+  <rect x="175" y="300" width="310" height="22" fill="#1DB954" rx="4"/>
+  <text x="492" y="316" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">786 days</text>
+
+  <!-- 8. Dua Lipa -->
+  <text x="160" y="350" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">Dua Lipa</text>
+  <rect x="175" y="335" width="293" height="22" fill="#1DB954" rx="4"/>
+  <text x="475" y="351" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">742 days</text>
+
+  <!-- 9. The Killers -->
+  <text x="160" y="385" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">The Killers</text>
+  <rect x="175" y="370" width="280" height="22" fill="#F59E0B" rx="4"/>
+  <text x="462" y="386" font-family="sans-serif" font-size="11" font-weight="700" fill="#F59E0B">710 days</text>
+
+  <!-- 10. RAYE -->
+  <text x="160" y="420" text-anchor="end" font-family="sans-serif" font-size="12" font-weight="600" fill="#ECEFF4">RAYE</text>
+  <rect x="175" y="405" width="274" height="22" fill="#1DB954" rx="4"/>
+  <text x="456" y="421" font-family="sans-serif" font-size="11" font-weight="700" fill="#1DB954">694 days</text>
+
+  <!-- Axis line -->
+  <line x1="175" y1="80" x2="175" y2="440" stroke="#333333" stroke-width="1.5"/>
+</svg>

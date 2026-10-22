@@ -31,6 +31,14 @@ An enterprise-grade exploratory data analysis and interactive analytics dashboar
 
 ---
 
+## 🧭 Strategic Decision Framework
+
+<p align="center">
+  <img src="assets/market_architecture_flow.svg" alt="BritSound Strategic Decision Architecture" width="100%"/>
+</p>
+
+---
+
 ## 🗂️ Project Repository Structure
 
 ```
@@ -78,6 +86,10 @@ c:/ukanalysis/
 - Construction of undirected, weighted graph $G = (V, E)$ where nodes represent artists and edge weights represent shared chart appearances.
 - Graph theory metrics computed: Degree Centrality, Betweenness Centrality (identifying key bridge artists like RAYE and Calvin Harris), and Network Density.
 
+<p align="center">
+  <img src="assets/top_artists_dominance.svg" alt="Top Dominant Artists in the UK Top 50" width="100%"/>
+</p>
+
 ### 3. Cultural Content Explicitness
 - Tracking the prevalence of explicit vs. clean tracks across four distinct rank tiers:
   - *Tier 1: Top 10 (Pinnacle)*
@@ -85,6 +97,10 @@ c:/ukanalysis/
   - *Tier 3: Rank 21–35 (Mid-Tier)*
   - *Tier 4: Rank 36–50 (Lower-Tier)*
 - Correlating with British broadcast policies (BBC Radio 1 daytime watershed) and playlist demographic consumption.
+
+<p align="center">
+  <img src="assets/explicitness_by_rank.svg" alt="Content Explicitness Share Across UK Rank Tiers" width="100%"/>
+</p>
 
 ### 4. Release Format & Packaging Dynamics
 - Comparison of **Standalone Singles** (1–2 tracks), **EPs** (3–6 tracks), and **Studio Albums** (7+ tracks).

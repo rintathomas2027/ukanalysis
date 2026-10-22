@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 420" width="850" height="420">
+  <rect width="100%" height="100%" fill="#121212" rx="10"/>
+  <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Content Explicitness Share Across UK Rank Tiers</text>
+  <text x="30" y="66" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" fill="#A0A0A0">Evidence of the British "Clean Content Ceiling" at the Top 10 Pinnacle</text>
+
+  <!-- Legend -->
+  <rect x="580" y="32" width="12" height="12" fill="#1DB954" rx="3"/>
+  <text x="600" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" fill="#FFFFFF">Clean / Radio Standard</text>
+  <rect x="735" y="32" width="12" height="12" fill="#FF007F" rx="3"/>
+  <text x="755" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" fill="#FFFFFF">Explicit</text>
+
+  <!-- Y-Axis labels (0% to 100%) -->
+  <text x="65" y="105" text-anchor="end" font-family="sans-serif" font-size="10" fill="#718096">100%</text>
+  <line x1="75" y1="100" x2="800" y2="100" stroke="#222222" stroke-dasharray="4"/>
+
+  <text x="65" y="175" text-anchor="end" font-family="sans-serif" font-size="10" fill="#718096">75%</text>
+  <line x1="75" y1="170" x2="800" y2="170" stroke="#222222" stroke-dasharray="4"/>
+
+  <text x="65" y="245" text-anchor="end" font-family="sans-serif" font-size="10" fill="#718096">50%</text>
+  <line x1="75" y1="240" x2="800" y2="240" stroke="#222222" stroke-dasharray="4"/>
+
+  <text x="65" y="315" text-anchor="end" font-family="sans-serif" font-size="10" fill="#718096">25%</text>
+  <line x1="75" y1="310" x2="800" y2="310" stroke="#222222" stroke-dasharray="4"/>
+
+  <text x="65" y="380" text-anchor="end" font-family="sans-serif" font-size="10" fill="#718096">0%</text>
+  <line x1="75" y1="375" x2="800" y2="375" stroke="#333333" stroke-width="1.5"/>
+
+  <!-- Bar Group 1: Top 10 -->
+  <!-- Clean: 68.8% (height: 189), Explicit: 31.2% (height: 86) -->
+  <rect x="130" y="186" width="90" height="189" fill="#1DB954" rx="4"/>
+  <rect x="130" y="100" width="90" height="86" fill="#FF007F" rx="4"/>
+  <text x="175" y="280" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">68.8%</text>
+  <text x="175" y="145" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">31.2%</text>
+  <text x="175" y="395" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#CBD5E0">1. Top 10</text>
+
+  <!-- Bar Group 2: Rank 11-20 -->
+  <!-- Clean: 58.5% (height: 161), Explicit: 41.5% (height: 114) -->
+  <rect x="310" y="214" width="90" height="161" fill="#1DB954" rx="4"/>
+  <rect x="310" y="100" width="90" height="114" fill="#FF007F" rx="4"/>
+  <text x="355" y="295" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">58.5%</text>
+  <text x="355" y="160" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">41.5%</text>
+  <text x="355" y="395" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#CBD5E0">2. Rank 11-20</text>
+
+  <!-- Bar Group 3: Rank 21-35 -->
+  <!-- Clean: 50.2% (height: 138), Explicit: 49.8% (height: 137) -->
+  <rect x="490" y="237" width="90" height="138" fill="#1DB954" rx="4"/>
+  <rect x="490" y="100" width="90" height="137" fill="#FF007F" rx="4"/>
+  <text x="535" y="310" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">50.2%</text>
+  <text x="535" y="170" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">49.8%</text>
+  <text x="535" y="395" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#CBD5E0">3. Rank 21-35</text>
+
+  <!-- Bar Group 4: Rank 36-50 -->
+  <!-- Clean: 61.4% (height: 169), Explicit: 38.6% (height: 106) -->
+  <rect x="670" y="206" width="90" height="169" fill="#1DB954" rx="4"/>
+  <rect x="670" y="100" width="90" height="106" fill="#FF007F" rx="4"/>
+  <text x="715" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">61.4%</text>
+  <text x="715" y="155" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">38.6%</text>
+  <text x="715" y="395" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#CBD5E0">4. Rank 36-50</text>
+</svg>
