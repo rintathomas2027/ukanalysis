@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "project_name": "BritSound Intelligence",
+        "dataset_name": "Spotify United Kingdom Top 50 Playlist Snapshots",
+        "total_records": 27800,
+        "total_snapshots_days": 556,
+        "date_start": "2024-05-18",
+        "date_end": "2025-11-27",
+        "unique_tracks": 489,
+        "unique_artists": 312,
+        "client": "Atlantic Recording Corporation",
+        "internship": "Unified Mentor"
+    },
+    "kpis": {
+        "artist_concentration_index_hhi": 842.3,
+        "cr4_top_4_artist_share_pct": 15.6,
+        "cr5_top_5_artist_share_pct": 18.7,
+        "cr10_top_10_artist_share_pct": 29.4,
+        "unique_artist_count": 312,
+        "diversity_score": 0.0112,
+        "gini_coefficient": 0.582,
+        "shannon_equitability": 0.784,
+        "content_variety_index_cvi": 76.4,
+        "collaboration_ratio_pct": 32.4,
+        "top10_collaboration_ratio_pct": 44.8,
+        "explicit_content_share_pct": 40.3,
+        "top10_explicit_content_share_pct": 31.2,
+        "top10_clean_content_share_pct": 68.8,
+        "single_vs_album_ratio": 1.69,
+        "single_share_pct": 59.3,
+        "album_share_pct": 35.1,
+        "ep_share_pct": 5.6,
+        "uk_domestic_artist_share_pct": 48.2,
+        "avg_track_duration_min": 3.32,
+        "avg_track_duration_sec": 199.2,
+        "avg_popularity_score": 88.6
+    },
+    "top_artists_by_appearances": {
+        "Taylor Swift": 1420,
+        "Arctic Monkeys": 1184,
+        "Dave": 962,
+        "Central Cee": 918,
+        "Coldplay": 845,
+        "Harry Styles": 812,
+        "Lewis Capaldi": 786,
+        "Dua Lipa": 742,
+        "The Killers": 710,
+        "RAYE": 694,
+        "Post Malone": 680,
+        "Calvin Harris": 662,
+        "Ed Sheeran": 648,
+        "SZA": 625,
+        "Miley Cyrus": 590
+    },
+    "duration_buckets_summary": [
+        {
+            "Duration Bucket": "< 2.5 min (Short-form)",
+            "Share of Chart (%)": 18.2,
+            "Avg Popularity": 86.4,
+            "Top 10 Inclusion Rate (%)": 16.5
+        },
+        {
+            "Duration Bucket": "2.5 - 3.5 min (Radio Standard)",
+            "Share of Chart (%)": 54.8,
+            "Avg Popularity": 89.7,
+            "Top 10 Inclusion Rate (%)": 62.1
+        },
+        {
+            "Duration Bucket": "> 3.5 min (Extended / Epic)",
+            "Share of Chart (%)": 27.0,
+            "Avg Popularity": 87.1,
+            "Top 10 Inclusion Rate (%)": 21.4
+        }
+    ]
+}
